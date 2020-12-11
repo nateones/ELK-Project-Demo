@@ -1,10 +1,10 @@
 # **ELK-Project-Demo**
-ELK Stack Demonstration
+Elastic (ELK) Stack Demonstration
 
 # **Background & Purpose** #
 This ELK demonstartion was created to showcase the security monitoring capabilities and tools of an ELK stack on a virtual cloud environment and how it can be implemented by network engineers. Using our ELK stack, we are able to monitor all incoming and outgoing traffic to our environment, save data logs, identify possible security breaches, and visualize threats in real time. This allows us to more efficiently protect our cloud environment and create an automated security monitoring system that will run 24/7.
 
-# **Scope** #
+# **Project Scope** #
 This ELK project was deployed in an Azure Cloud environment. This ELK stack also demonstrates two specifically monitored beat-types: Filebeat (file system data) and Metricbeat (machine metrics) for a DVWA application on the virtual network.
 
 # **Implementation** #
@@ -35,8 +35,10 @@ Filebeat - will help us generate and organize log files to send to Logstash and 
 Metricbeat - will help us collect system and service statistics such as CPU and memory.
 
 1. Navigate to our DVWA containers and install Filebeat & Metricbeat by creating a configuration playbook.
-2. Re-launch the Kibana web application to verify that our system tools have been updated accordingly.
+2. Launch the Kibana web application to verify that our system tools have been updated accordingly.
 
 ## Launch the Kibana Web Application ##
 Using the public IP address of our ELK stack virtual machine, we can access the Kibana webpage which will help us visualize our security posture of our virtual environment using graphs, charts, and complex dashboards.
 
+For more information on ELK stack, please visit:
+[elastic.co](https://www.elastic.co/what-is/elk-stack)
