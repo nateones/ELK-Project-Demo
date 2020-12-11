@@ -9,6 +9,8 @@ This ELK demonstartion was created to showcase the security monitoring capabilit
 # **Project Scope** #
 This ELK project was deployed in an Azure Cloud environment. This ELK stack also demonstrates two specifically monitored beat-types: Filebeat (file system data) and Metricbeat (machine metrics) for a DVWA application on the virtual network.
 
+![](images/Azure.png)  
+
 # **Implementation** #
 
 ## Virtual Network Creation ##
@@ -42,6 +44,9 @@ Metricbeat - will help us collect system and service statistics such as CPU and 
 ## Launch the Kibana Web Application ##
 Using the public IP address of our ELK stack virtual machine, we can access the Kibana webpage which will help us visualize our security posture of our virtual environment using graphs, charts, and complex dashboards.
 
+Using the ELK stack, we are now ready to efficiently and effectively monitor the security our cloud network environments!
+
+![](images/Kibana.png)  
 ____________________________________________________
 
 *For more information on ELK stack, please visit their website:*
