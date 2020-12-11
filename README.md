@@ -40,10 +40,10 @@ Metricbeat - will help us collect system and service statistics such as CPU and 
 1. Navigate to our DVWA containers and install Filebeat & Metricbeat by creating a configuration playbook.
 2. Launch the Kibana web application to verify that our system tools have been updated accordingly.
 
-## Launch the Kibana Web Application ##
+## Launch the "Kibana" Web Application ##
 Using the public IP address of our ELK stack virtual machine, we can access the Kibana webpage which will help us visualize our security posture of our virtual environment using graphs, charts, and complex dashboards.
 
-Using the diverse security tools provided by ELK stack, we are now ready to efficiently and effectively monitor the security of our cloud network environment with detailed precision!
+Using the many security tools provided by ELK stack, we are now ready to efficiently and effectively monitor the security of our cloud network environment with detailed precision!
 
 ![](images/Kibana.png)  
 ____________________________________________________
