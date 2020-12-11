@@ -7,9 +7,8 @@ Elastic (ELK) Stack Demonstration
 This ELK demonstartion was created to showcase the security monitoring capabilities and tools of an ELK stack on a virtual cloud environment and how it can be implemented by network engineers. Using our ELK stack, we are able to monitor all incoming and outgoing traffic to our environment, save data logs, identify possible security breaches, and visualize threats in real time. This allows us to more efficiently protect our cloud environment and create an automated security monitoring system that will run 24/7.
 
 # **Project Scope** #
-This ELK project was deployed in a Microsoft Azure Cloud environment. This ELK stack also demonstrates two specifically monitored beat-types: Filebeat (file system data) and Metricbeat (machine metrics) for a DVWA application on the virtual network.
+This ELK Stack project was deployed in a Microsoft Azure Cloud environment. This ELK Stack also focuses on two popular beat-types: Filebeat (file system data) and Metricbeat (machine metrics) for a DVWA application on the virtual network.
 ![](images/Azure.png)  
-
 # **Implementation** #
 
 ## Virtual Network Creation ##
