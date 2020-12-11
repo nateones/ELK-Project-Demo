@@ -7,7 +7,7 @@ Elastic (ELK) Stack Demonstration
 This ELK demonstartion was created to showcase the security monitoring capabilities and tools of an ELK stack on a virtual cloud environment and how it can be implemented by network engineers. Using our ELK stack, we are able to monitor all incoming and outgoing traffic to our environment, save data logs, identify possible security breaches, and visualize threats in real time. This allows us to more efficiently protect our cloud environment and create an automated security monitoring system that will run 24/7.
 
 # **Project Scope** #
-This ELK project was deployed in an Azure Cloud environment. This ELK stack also demonstrates two specifically monitored beat-types: Filebeat (file system data) and Metricbeat (machine metrics) for a DVWA application on the virtual network.
+This ELK project was deployed in a Microsoft Azure Cloud environment. This ELK stack also demonstrates two specifically monitored beat-types: Filebeat (file system data) and Metricbeat (machine metrics) for a DVWA application on the virtual network.
 
 ![](images/Azure.png)  
 
@@ -44,10 +44,10 @@ Metricbeat - will help us collect system and service statistics such as CPU and 
 ## Launch the Kibana Web Application ##
 Using the public IP address of our ELK stack virtual machine, we can access the Kibana webpage which will help us visualize our security posture of our virtual environment using graphs, charts, and complex dashboards.
 
-Using the ELK stack, we are now ready to efficiently and effectively monitor the security our cloud network environments!
+Using the diverse security tools provided by ELK stack, we are now ready to efficiently and effectively monitor the security of our cloud network environment with detailed precision!
 
 ![](images/Kibana.png)  
 ____________________________________________________
 
-*For more information on ELK stack, please visit their website:*
+*For more information about ELK stack, please visit their website:*
 [elastic.co](https://www.elastic.co/what-is/elk-stack)
