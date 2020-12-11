@@ -40,5 +40,7 @@ Metricbeat - will help us collect system and service statistics such as CPU and 
 ## Launch the Kibana Web Application ##
 Using the public IP address of our ELK stack virtual machine, we can access the Kibana webpage which will help us visualize our security posture of our virtual environment using graphs, charts, and complex dashboards.
 
-For more information on ELK stack, please visit:
+____________________________________________________
+
+For more information on ELK stack, please visit their website:
 [elastic.co](https://www.elastic.co/what-is/elk-stack)
