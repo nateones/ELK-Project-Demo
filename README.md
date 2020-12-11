@@ -8,7 +8,6 @@ This ELK demonstartion was created to showcase the security monitoring capabilit
 
 # **Project Scope** #
 This ELK project was deployed in a Microsoft Azure Cloud environment. This ELK stack also demonstrates two specifically monitored beat-types: Filebeat (file system data) and Metricbeat (machine metrics) for a DVWA application on the virtual network.
-
 ![](images/Azure.png)  
 
 # **Implementation** #
