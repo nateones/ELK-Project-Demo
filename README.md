@@ -2,7 +2,7 @@
 Elastic (ELK) Stack Demonstration
 
 *By Nathaniel Ones*
-![](ELK.jpg)
+![](ELK.png)  
 
 # **Background & Purpose** #
 This ELK demonstartion was created to showcase the security monitoring capabilities and tools of an ELK stack on a virtual cloud environment and how it can be implemented by network engineers. Using our ELK stack, we are able to monitor all incoming and outgoing traffic to our environment, save data logs, identify possible security breaches, and visualize threats in real time. This allows us to more efficiently protect our cloud environment and create an automated security monitoring system that will run 24/7.
