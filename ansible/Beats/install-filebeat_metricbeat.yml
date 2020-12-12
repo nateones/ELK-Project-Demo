@@ -1,0 +1,42 @@
+---
+- name: Installing and Launch Filebeat & Metricbeat
+  hosts: webservers
+  become: yes
+  vars:
+    pkgs:
+      -
+        name: filebeat
+        pkg_url: "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.0-amd64.deb"
+        commands:
+          - filebeat modules enable system
+          - filebeat setup
+      -
+        name: metricbeat
+        pkg_url: "https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.4.0-amd64.deb"
+        commands:
+          - metricbeat modules enable docker
+          - metricbeat setup
+  tasks:
+  - name: Install Deb Pkg
+    apt:
+      deb: "{{ item.pkg_url }}"
+    loop: "{{ pkgs }}"
+    # Use copy module
+  - name: Drop in filebeat.yml
+    copy:
+      src: "/etc/ansible/files/{{ item.name }}-config.yml"
+      dest: "/etc/{{item.name}}/{{ item.name }}.yml"
+    loop: "{{ pkgs }}"
+  - name: Run Commands
+    command: "{{ item.1 }}"
+    with_subelements:
+      - "{{ pkgs }}"
+      - commands
+    register: out
+  - name: Command results
+    debug: var=out
+  - name: Start {{ item.name }} service
+    service:
+      name: "{{ item.name }}"
+      state:  started
+    loop: "{{ pkgs }}"
